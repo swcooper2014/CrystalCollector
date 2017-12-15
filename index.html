@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet"  type="text/css" href="C:\Users\SW Cooper\week-4-game\assets\style.css">
+  <title>Crystal Game</title>
+</head>
+
+
+<body>
+
+<div class="container">
+<div class="jumbotron">
+      <h1 class="text-center"><strong>The Chrystal Game</strong></h1>
+</div>
+
+<div class="row">
+      <div class="col-md-6">
+     
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">How To Play The Game:</h3>
+          </div>
+            <div class="panel-body">
+              <ol>
+					<li>You will be given a random number at the start of the game.</li>
+					<li>There are four crystals below. By clicking on a crystal you will add a specific ammount of points to your total score.</li>
+					<li>You win the game bymatching your total score to a random number, you lose the game if your total score goes above the random number.</li>
+					<li>The value of each crystal is hidden from your until you click on it.</li>
+					<li>Each time when teh game started, the game will change the values of each crystal.</li>
+				</ol>
+        </div>
+    </div>
+
+	<div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Target To Reach </h3>
+          </div>
+          <div class="panel-body">
+              <p>Target Number: <span id="targetnumber"></span></p>
+    	</div>
+   </div>
+
+ 	<div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Crystals</h3>
+          </div>
+          <div class="panel-body">
+               <img id = "button1" src="C:\Users\SW Cooper\week-4-game\assets\red crystal.png" alt="red crystal">
+           	   <img id = "button2" src="C:\Users\SW Cooper\week-4-game\assets\blue crystal.png" alt="blue crystal">
+               <img id = "button3" src="C:\Users\SW Cooper\week-4-game\assets\yellow crystal.png" alt="yellow crystal">
+               <img id = "button4" src="C:\Users\SW Cooper\week-4-game\assets\green crystal.png" alt="green crystal">
+        </div>
+       </div>
+      </div>
+
+<div class="col-md-6">
+
+  	<div class="panel panel-default">
+       <div class="panel-heading">
+          <h3 class="panel-title">Your Total Score</h3>
+       </div>
+    <div class="panel-body">
+      	<p id="yourscore">Your Score: <span id="yourscore"></span></p>
+    </div>
+   </div>
+
+  <div class="panel panel-default">
+       <div class="panel-heading">
+          <h3 class="panel-title">Wins and Losses</h3>
+       </div>
+       <div class="panel-body">
+      		<p>Wins: <span id="Wins"></span></p>
+      		<p>Losses: <spand id="Losses"></span></p>
+       </div>
+   </div>
+</div>
+
+</div>
+</div>
+</div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="C:\Users\SW Cooper\week-4-game\assets\game.js"></script>
+</body>
+</html>
