@@ -1,9 +1,8 @@
 $(document).ready(function(){
 
 var targetNumber = Math.floor(Math.random()*101) +19;
- $('#targetnumber').text(targetNumber);
+document.querySelector('#targetnumber').innerHTML = targetNumber;
 
- console.log(targetnumber);
 
 var number1= Math.floor(Math.random()*11) +1;
 var number2= Math.floor(Math.random()*11) +1;
@@ -14,25 +13,26 @@ var score= 0;
 var wins = 0;
 var losses = 0;
 
-$('#Wins').text(wins);
-$('#Losses').text(losses);
+document.querySelector('#Wins').innerHTML = wins;
+document.querySelector('#Losses').innerHTML = losses;
 
 function reset(){
       targetNumber=Math.floor(Math.random()*101) +19;
-       $('#targetnumber').text(targetNumber);
+      document.querySelector('#targetnumber').innerHTML = targetNumber;
       number1= Math.floor(Math.random()*11) +1;
       number2= Math.floor(Math.random()*11) +1;
       number3= Math.floor(Math.random()*11) +1;
       number4= Math.floor(Math.random()*11) +1;
       score= 0;
-      $('#yourscore').text(score);
+      document.querySelector('#yourscore').innerHTML =  score;
+    
   }
 
 function win() {
 
 	alert("You win!");
 	wins++;
-	$('#Wins').text(wins);
+    document.querySelector('#Wins').innerHTML = wins;
 	reset();
 }
 
@@ -42,7 +42,7 @@ function lose() {
 
 	alert("You lose!");
 	losses++;
-	$("#Losses").text(losses);
+    document.querySelector('#Losses').innerHTML = losses;
 	reset();
 }
 
@@ -50,7 +50,7 @@ function lose() {
 
  $('#button1').on ('click', function(){
     score = score + number1;
-    $('#yourscore').text(score);
+    document.querySelector('#yourscore').innerHTML = score;
         if (score == targetNumber){
         win();
       }
@@ -61,7 +61,7 @@ function lose() {
  
 $('#button2').on ('click', function(){
     score = score + number2;
-    $('#yourscore').text(score);
+    document.querySelector('#yourscore').innerHTML = score;
        if (score == targetNumber){
         win();
        }
@@ -73,7 +73,7 @@ $('#button2').on ('click', function(){
 
  $('#button3').on ('click', function(){
     score = score + number3;
-    $('#yourscore').text(score);
+    document.querySelector('#yourscore').innerHTML = score;
        if (score == targetNumber){
         win();
       }
@@ -85,7 +85,7 @@ $('#button2').on ('click', function(){
 
  $('#button4').on ('click', function(){
     score = score + number4;
-   $('#yourscore').text(score); 
+    document.querySelector('#yourscore').innerHTML = score; 
       if (score == targetNumber){
         win();
       }
