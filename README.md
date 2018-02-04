@@ -16,17 +16,17 @@ The player loses if their score goes above the random number.
 
 The game restarts whenever the player wins or loses.
 
-The game should show the number of games the player wins and loses.
+The game should show the number of games the player wins and losses.
 
 You can access the app: https://swcooper2014.github.io/CrystalCollector
 
-Technolgoies Used
+Technologies Used
 
 HTML
 
 CSS
 
-Boostrap CSS
+Bootstrap CSS
 
 Javascript
 
